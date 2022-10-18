@@ -1,13 +1,16 @@
 <template>
-  <h1>{{ name }}</h1>
+  <h1>{{name }}</h1>
+  <ChildVue/>
 </template>
 
 <script>
+import ChildVue from './components/Child.vue';
 export default {
-  name: "App",
+  name: 'App',
+  components:{ChildVue},
   data() {
     return {
-      name: "Vishnu",
+      name: 'Vishnu',
     };
   },
 };
